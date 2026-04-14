@@ -71,6 +71,7 @@
     <Content Include="Ejercicio 1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="Ejercicio1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ejercicio 1.aspx.cs">

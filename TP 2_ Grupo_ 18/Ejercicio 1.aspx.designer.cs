@@ -105,12 +105,12 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.Button btnTabla;
 
         /// <summary>
-        /// TblProductos control.
+        /// tblProductos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table TblProductos;
+        protected global::System.Web.UI.WebControls.Table tblProductos;
     }
 }

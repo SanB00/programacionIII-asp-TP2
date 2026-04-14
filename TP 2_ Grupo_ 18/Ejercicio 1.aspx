@@ -123,7 +123,7 @@
                 </tr>
             </table>
         </div>
-        <asp:Table ID="TblProductos" runat="server" Height="80px" Width="101px">
+        <asp:Table ID="tblProductos" runat="server" Height="80px" Width="101px">
         </asp:Table>
     </form>
 </body>

@@ -19,6 +19,21 @@
         .auto-style4 {
             width: 71px;
         }
+        .auto-style5 {
+            width: 226px;
+            height: 26px;
+        }
+        .auto-style6 {
+            width: 151px;
+            height: 26px;
+        }
+        .auto-style7 {
+            width: 71px;
+            height: 26px;
+        }
+        .auto-style8 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -35,21 +50,21 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">
+                    <td class="auto-style5">
                         <asp:Label ID="LblProductos" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto: "></asp:Label>
                     </td>
-                    <td class="auto-style3">
+                    <td class="auto-style6">
                         <asp:TextBox ID="TxtB1" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style4">
+                    <td class="auto-style7">
                         <asp:Label ID="LblCantidad1" runat="server" style="font-weight: 700" Text="Cantidad:"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style8">
                         <asp:TextBox ID="TxtBCantidad1" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
@@ -88,7 +103,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="BtnTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" />
+                        <asp:Button ID="BtnTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="BtnTabla_Click" />
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
@@ -108,6 +123,8 @@
                 </tr>
             </table>
         </div>
+        <asp:Table ID="TblProductos" runat="server" Height="80px" Width="101px">
+        </asp:Table>
     </form>
 </body>
 </html>

@@ -13,5 +13,20 @@ namespace TP_2__Grupo__18
         {
 
         }
+
+        protected void BtnTabla_Click(object sender, EventArgs e)
+        {
+            TblProductos.Rows.Clear();
+
+            TableRow filaHeader = new TableRow();
+            filaHeader.Cells.Add(new TableCell { Text = "Producto" });
+            filaHeader.Cells.Add(new TableCell { Text = "Cantidad" });
+            TblProductos.Rows.Add(filaHeader);
+
+            
+           
+
+
+        }
     }
 }

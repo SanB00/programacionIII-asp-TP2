@@ -18,11 +18,11 @@ namespace TP2Grupo18
             filaHeader.Cells.Add(new TableCell { Text = "Cantidad" });
             tblProductos.Rows.Add(filaHeader);
 
-            String producto = txtProducto1.Text;
-            String cantidad = txtCantidad1.Text;
+            String producto1 = txtProducto1.Text;
+            String cantidad1 = txtCantidad1.Text;
             TableRow fila = new TableRow();
-            fila.Cells.Add(new TableCell { Text = producto });
-            fila.Cells.Add(new TableCell { Text = cantidad });
+            fila.Cells.Add(new TableCell { Text = producto1 });
+            fila.Cells.Add(new TableCell { Text = cantidad1 });
             tblProductos.Rows.Add(fila);
 
 
@@ -32,6 +32,12 @@ namespace TP2Grupo18
             fila2.Cells.Add(new TableCell { Text = producto2 });
             fila2.Cells.Add(new TableCell { Text = cantidad2 });
             tblProductos.Rows.Add(fila2);
+
+            int resultadoTotal = int.Parse(cantidad1) + int.Parse(cantidad2);
+            TableRow fila3 = new TableRow();
+            fila3.Cells.Add(new TableCell { Text = "TOTAL" });
+            fila3.Cells.Add(new TableCell { Text = resultadoTotal.ToString() });
+            tblProductos.Rows.Add(fila3);
         }
     }
 }

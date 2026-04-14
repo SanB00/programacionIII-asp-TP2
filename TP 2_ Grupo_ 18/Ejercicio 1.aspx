@@ -54,13 +54,13 @@
                         <asp:Label ID="LblProductos" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto: "></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtProducto" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtProducto1" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
                         <asp:Label ID="LblCantidad1" runat="server" style="font-weight: 700" Text="Cantidad:"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad1" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style8"></td>
@@ -103,7 +103,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="btnTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="btnTabla_Click" />
+                        <asp:Button ID="btnGenerarTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" />
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>

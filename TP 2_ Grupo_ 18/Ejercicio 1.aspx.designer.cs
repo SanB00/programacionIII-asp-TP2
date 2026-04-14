@@ -33,13 +33,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.Label LblProductos;
 
         /// <summary>
-        /// txtProducto control.
+        /// txtProducto1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProducto;
+        protected global::System.Web.UI.WebControls.TextBox txtProducto1;
 
         /// <summary>
         /// LblCantidad1 control.
@@ -51,13 +51,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.Label LblCantidad1;
 
         /// <summary>
-        /// txtCantidad control.
+        /// txtCantidad1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCantidad;
+        protected global::System.Web.UI.WebControls.TextBox txtCantidad1;
 
         /// <summary>
         /// LblProducto2 control.
@@ -96,13 +96,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCantidad2;
 
         /// <summary>
-        /// btnTabla control.
+        /// btnGenerarTabla control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTabla;
+        protected global::System.Web.UI.WebControls.Button btnGenerarTabla;
 
         /// <summary>
         /// tblProductos control.

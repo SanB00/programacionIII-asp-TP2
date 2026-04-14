@@ -9,7 +9,7 @@ namespace TP2Grupo18
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        protected void btnTabla_Click(object sender, EventArgs e)
+        protected void btnGenerarTabla_Click(object sender, EventArgs e)
         {
             tblProductos.Rows.Clear();
 
@@ -18,10 +18,8 @@ namespace TP2Grupo18
             filaHeader.Cells.Add(new TableCell { Text = "Cantidad" });
             tblProductos.Rows.Add(filaHeader);
 
-
-            String producto = txtProducto.Text;
-            String cantidad = txtCantidad.Text;
-
+            String producto = txtProducto1.Text;
+            String cantidad = txtCantidad1.Text;
             TableRow fila = new TableRow();
             fila.Cells.Add(new TableCell { Text = producto });
             fila.Cells.Add(new TableCell { Text = cantidad });
@@ -30,7 +28,6 @@ namespace TP2Grupo18
 
             String producto2 = txtProducto2.Text;
             String cantidad2 = txtCantidad2.Text;
-
             TableRow fila2 = new TableRow();
             fila2.Cells.Add(new TableCell { Text = producto2 });
             fila2.Cells.Add(new TableCell { Text = cantidad2 });

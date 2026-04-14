@@ -6,25 +6,34 @@ namespace TP2Grupo18
     public partial class WebForm1 : System.Web.UI.Page
     {
         protected void btnGenerarTabla_Click(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
-            dt.Columns.AddRange(new DataColumn[2] {
-                new DataColumn("Producto", typeof(string)),
-                new DataColumn("Cantidad", typeof(int))
-            });
-            String strCantidad1 = Common.eliminarEspaciosDelTexto(txtCantidad1.Text);
-            String strCantidad2 = Common.eliminarEspaciosDelTexto(txtCantidad2.Text);
+            int numero1, numero2;
+            if (!int.TryParse(txtCantidad1.Text, out numero1) || !int.TryParse(txtCantidad2.Text, out numero2) || numero1 <= 0 || numero2 <= 0) {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert",
+                    "alert('Ingrese un número válido');", true);
+            }
+            else {
 
-            int cantidad1 = string.IsNullOrEmpty(strCantidad1) ? 0 : int.Parse(strCantidad1);
-            int cantidad2 = string.IsNullOrEmpty(strCantidad2) ? 0 : int.Parse(strCantidad2);
 
-            dt.Rows.Add(txtProducto1.Text, cantidad1);
-            dt.Rows.Add(txtProducto2.Text, cantidad2);
+                DataTable dt = new DataTable();
+                dt.Columns.AddRange(new DataColumn[2] {
+                    new DataColumn("Producto", typeof(string)),
+                    new DataColumn("Cantidad", typeof(int))
+                });
+                String strCantidad1 = Common.eliminarEspaciosDelTexto(txtCantidad1.Text);
+                String strCantidad2 = Common.eliminarEspaciosDelTexto(txtCantidad2.Text);
 
-            int resultadoTotal = cantidad1 + cantidad2;
-            dt.Rows.Add("TOTAL", resultadoTotal.ToString());
+                int cantidad1 = string.IsNullOrEmpty(strCantidad1) ? 0 : int.Parse(strCantidad1);
+                int cantidad2 = string.IsNullOrEmpty(strCantidad2) ? 0 : int.Parse(strCantidad2);
 
-            gvListadoProductos.DataSource = dt;
-            gvListadoProductos.DataBind();
+                dt.Rows.Add(txtProducto1.Text, cantidad1);
+                dt.Rows.Add(txtProducto2.Text, cantidad2);
+
+                int resultadoTotal = cantidad1 + cantidad2;
+                dt.Rows.Add("TOTAL", resultadoTotal.ToString());
+
+                gvListadoProductos.DataSource = dt;
+                gvListadoProductos.DataBind();
+            }
         }
     }
 }

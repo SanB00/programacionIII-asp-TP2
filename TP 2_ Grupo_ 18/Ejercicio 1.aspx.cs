@@ -14,8 +14,8 @@ namespace TP2Grupo18
             String strCantidad1 = Common.eliminarEspaciosDelTexto(txtCantidad1.Text);
             String strCantidad2 = Common.eliminarEspaciosDelTexto(txtCantidad2.Text);
 
-            Common.mostrarErrorCuandoNoEsNumero(strCantidad1, this);
-            Common.mostrarErrorCuandoNoEsNumero(strCantidad2, this);
+            if (!Common.esUnNroValido(strCantidad1)) { mostrarMensajeEnAlerta("Ingrese un número valido para el producto 1"); return; }
+            if (!Common.esUnNroValido(strCantidad2)) { mostrarMensajeEnAlerta("Ingrese un número valido para el producto 2"); return; }
 
             int cantidad1 = string.IsNullOrEmpty(strCantidad1) ? 0 : int.Parse(strCantidad1);
             int cantidad2 = string.IsNullOrEmpty(strCantidad2) ? 0 : int.Parse(strCantidad2);
@@ -28,7 +28,14 @@ namespace TP2Grupo18
 
             gvListadoProductos.DataSource = dt;
             gvListadoProductos.DataBind();
+        }
 
+        protected void mostrarMensajeEnAlerta(string mensaje) {
+            ClientScript.RegisterStartupScript(this.GetType()
+                    , "alert"
+                    , $"alert('{mensaje}');"
+                    , true
+            );
         }
     }
 }

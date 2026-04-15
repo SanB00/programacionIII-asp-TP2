@@ -24,13 +24,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LblProductos control.
+        /// lblProductos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblProductos;
+        protected global::System.Web.UI.WebControls.Label lblProductos;
 
         /// <summary>
         /// txtProducto1 control.
@@ -42,13 +42,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtProducto1;
 
         /// <summary>
-        /// LblCantidad1 control.
+        /// lblCantidad1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCantidad1;
+        protected global::System.Web.UI.WebControls.Label lblCantidad1;
 
         /// <summary>
         /// txtCantidad1 control.
@@ -60,13 +60,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtCantidad1;
 
         /// <summary>
-        /// LblProducto2 control.
+        /// lblProducto2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblProducto2;
+        protected global::System.Web.UI.WebControls.Label lblProducto2;
 
         /// <summary>
         /// txtProducto2 control.
@@ -78,13 +78,13 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.TextBox txtProducto2;
 
         /// <summary>
-        /// LblCantidad2 control.
+        /// lblCantidad2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCantidad2;
+        protected global::System.Web.UI.WebControls.Label lblCantidad2;
 
         /// <summary>
         /// txtCantidad2 control.

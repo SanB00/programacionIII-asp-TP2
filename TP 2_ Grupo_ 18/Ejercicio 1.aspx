@@ -11,20 +11,20 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 226px;
+            width: 240px;
         }
         .auto-style3 {
-            width: 151px;
+            width: 244px;
         }
         .auto-style4 {
             width: 71px;
         }
         .auto-style5 {
-            width: 226px;
+            width: 240px;
             height: 26px;
         }
         .auto-style6 {
-            width: 151px;
+            width: 244px;
             height: 26px;
         }
         .auto-style7 {
@@ -51,16 +51,16 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Label ID="LblProductos" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto: "></asp:Label>
+                        <asp:Label ID="lblProductos" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto 1: "></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtProducto1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtProducto1" runat="server" Width="155px"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:Label ID="LblCantidad1" runat="server" style="font-weight: 700" Text="Cantidad:"></asp:Label>
+                        <asp:Label ID="lblCantidad1" runat="server" style="font-weight: 700" Text="Cantidad:"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txtCantidad1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad1" runat="server" Width="65px"></asp:TextBox>
                     </td>
                     <td class="auto-style8"></td>
                     <td class="auto-style8"></td>
@@ -77,16 +77,16 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Label ID="LblProducto2" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto: "></asp:Label>
+                        <asp:Label ID="lblProducto2" runat="server" style="font-weight: 700" Text="Ingrese el nombre del producto 2: "></asp:Label>
                     </td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="txtProducto2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtProducto2" runat="server" Width="155px"></asp:TextBox>
                     </td>
                     <td class="auto-style4">
-                        <asp:Label ID="LblCantidad2" runat="server" style="font-weight: 700" Text="Cantidad: "></asp:Label>
+                        <asp:Label ID="lblCantidad2" runat="server" style="font-weight: 700" Text="Cantidad: "></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtCantidad2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCantidad2" runat="server" Width="65px"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -103,7 +103,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="btnGenerarTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" />
+                        <asp:Button ID="btnGenerarTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" Font-Bold="False" ToolTip="Mostrar tabla con datos del producto :)" />
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>

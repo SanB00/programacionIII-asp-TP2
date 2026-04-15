@@ -13,5 +13,8 @@ namespace TP2Grupo18
             //texto.All(char.IsDigit)
             return int.TryParse(texto, out int nroValidar) && nroValidar > 0;
         }
+        public static bool esSoloLetras(string texto) {
+            return texto.All(char.IsLetter);
+        }
     }
 }

@@ -123,7 +123,7 @@
                 </tr>
             </table>
         </div>
-        <asp:GridView ID="gvListadoProductos" runat="server">
+        <asp:GridView ID="gvListadoProductos" runat="server" BorderStyle="Double" BorderWidth="5px" CellPadding="5" CellSpacing="1">
         </asp:GridView>
     </form>
 </body>

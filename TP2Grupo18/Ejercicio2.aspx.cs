@@ -22,6 +22,9 @@ namespace TP2Grupo18
                 Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
+            else {
+                Response.Redirect("Ejercicio2Form2.aspx");
+            }
         }
 
 

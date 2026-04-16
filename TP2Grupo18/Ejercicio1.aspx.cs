@@ -28,6 +28,8 @@ namespace TP2Grupo18
             if (!Common.esSoloLetras(strProducto2)) { msgDeErrores += "\n * Ingrese un producto válido sin números. Revisar producto 2"; }
             if (string.IsNullOrEmpty(strProducto1)) { msgDeErrores += "\n * El producto 1 no debe tener espacios o quedar en blanco."; }
             if (string.IsNullOrEmpty(strProducto2)) { msgDeErrores += "\n * El producto 2 no debe tener espacios o quedar en blanco."; }
+            if (!Common.estaElTextoDentroDelRango(strProducto1)) { msgDeErrores += $"\n * El Producto 1 debe tener entre {Common.MIN_CHARS_TEXTO} y {Common.MAX_CHARS_TEXTO} caracteres."; }
+            if (!Common.estaElTextoDentroDelRango(strProducto2)) { msgDeErrores += $"\n * El Producto 2 debe tener entre {Common.MIN_CHARS_TEXTO} y {Common.MAX_CHARS_TEXTO} caracteres."; }
             if (strProducto1.ToLower() == strProducto2.ToLower()) { msgDeErrores += "\n * El producto no debe repetirse."; }
 
             if (!string.IsNullOrEmpty(msgDeErrores)) {

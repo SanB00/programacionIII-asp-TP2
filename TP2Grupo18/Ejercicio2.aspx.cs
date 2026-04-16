@@ -19,17 +19,11 @@ namespace TP2Grupo18
             if (string.IsNullOrEmpty(strNombre)) { msgDeErrores += "\n * El nombre no debe tener espacios o quedar en blanco. Por favor completar"; }
             if (string.IsNullOrEmpty(strApellido)) { msgDeErrores += "\n * El apellido no debe tener espacios o quedar en blanco. Por favor completar"; }
             if (!string.IsNullOrEmpty(msgDeErrores)) {
-                mostrarMensajeEnAlerta(msgDeErrores);
+                Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
         }
 
-        protected void mostrarMensajeEnAlerta(string mensaje) {
-            string safeMessage = mensaje.Replace("'", "\\'").Replace("\n", "\\n");
-            ClientScript.RegisterStartupScript(this.GetType(),
-                "alert",
-                $"alert('{safeMessage}');",
-                true);
-        }
+
     }
 }

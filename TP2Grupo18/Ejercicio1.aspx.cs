@@ -20,6 +20,7 @@ namespace TP2Grupo18
             String strProducto1 = Common.eliminarEspaciosDelTexto(txtProducto1.Text);
             String strProducto2 = Common.eliminarEspaciosDelTexto(txtProducto2.Text);
             #endregion
+
             #region 2) Validar campos
             if (!Common.esUnNroValido(strCantidad1)) { msgDeErrores += "\n * Ingrese números válidos y mayores a 0 para el producto 1"; }
             if (!Common.esUnNroValido(strCantidad2)) { msgDeErrores += "\n * Ingrese números válidos y mayores a 0 para el producto 2"; }
@@ -47,7 +48,7 @@ namespace TP2Grupo18
             gvListadoProductos.DataBind();
             #endregion
 
-            #region 4) Limpiar campos
+            #region 4) Limpiar campos después de cargar la tabla
             txtCantidad1.Text = string.Empty;
             txtCantidad2.Text = string.Empty;
             txtProducto1.Text = string.Empty;
@@ -61,7 +62,6 @@ namespace TP2Grupo18
                 "alert",
                 $"alert('{safeMessage}');",
                 true);
-
         }
     }
 }

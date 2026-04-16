@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
-    <Compile Include="Ejercicio1.cs" />
     <Compile Include="Ejercicio2.aspx.cs">
       <DependentUpon>Ejercicio2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

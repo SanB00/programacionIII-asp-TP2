@@ -85,10 +85,10 @@
                 <tr>
                     <td class="auto-style3">Ciudad:</td>
                     <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="130px">
-                            <asp:ListItem Enabled="False" Value="zona norte">Gral. Pacheco</asp:ListItem>
-                            <asp:ListItem Value="zona oeste">San Miguel</asp:ListItem>
-                            <asp:ListItem Value="zona sur">Boedo</asp:ListItem>
+                        <asp:DropDownList ID="ddlCiudades" runat="server" AutoPostBack="True" Width="130px">
+                            <asp:ListItem Value="Zona Norte">Gral. Pacheco</asp:ListItem>
+                            <asp:ListItem Value="Zona Oeste">San Miguel</asp:ListItem>
+                            <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style4"></td>
@@ -107,8 +107,34 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style2">Temas:</td>
+                    <td class="auto-style5">
+                        <asp:CheckBoxList ID="chkTemas" runat="server">
+                            <asp:ListItem>Ciencias</asp:ListItem>
+                            <asp:ListItem>Literatura</asp:ListItem>
+                            <asp:ListItem>Historia</asp:ListItem>
+                        </asp:CheckBoxList>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Button ID="btnVerResumen" runat="server" OnClick="btnVerResumen_Click" Text="Ver Resúmen" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -191,24 +217,6 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>s</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

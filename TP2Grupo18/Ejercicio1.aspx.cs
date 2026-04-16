@@ -26,12 +26,12 @@ namespace TP2Grupo18
             if (!Common.esUnNroValido(strCantidad2)) { msgDeErrores += "\n * Ingrese números válidos y mayores a 0 para el producto 2"; }
             if (!Common.esSoloLetras(strProducto1)) { msgDeErrores += "\n * Ingrese un producto válido sin números. Revisar producto 1"; }
             if (!Common.esSoloLetras(strProducto2)) { msgDeErrores += "\n * Ingrese un producto válido sin números. Revisar producto 2"; }
-            if (string.IsNullOrEmpty(strProducto1)) { msgDeErrores += "\n * El producto 1 no debe tener espacios o quedar en blanco. Revisar producto 1"; }
-            if (string.IsNullOrEmpty(strProducto2)) { msgDeErrores += "\n * El producto 2 no debe tener espacios o quedar en blanco. Revisar producto 2"; }
-            if (strProducto1.ToLower() == strProducto2.ToLower()) { msgDeErrores += "\n * El producto no debe Repetirse."; }
+            if (string.IsNullOrEmpty(strProducto1)) { msgDeErrores += "\n * El producto 1 no debe tener espacios o quedar en blanco."; }
+            if (string.IsNullOrEmpty(strProducto2)) { msgDeErrores += "\n * El producto 2 no debe tener espacios o quedar en blanco."; }
+            if (strProducto1.ToLower() == strProducto2.ToLower()) { msgDeErrores += "\n * El producto no debe repetirse."; }
 
             if (!string.IsNullOrEmpty(msgDeErrores)) {
-                mostrarMensajeEnAlerta(msgDeErrores);
+                Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
             #endregion
@@ -56,12 +56,5 @@ namespace TP2Grupo18
             #endregion
         }
 
-        protected void mostrarMensajeEnAlerta(string mensaje) {
-            string safeMessage = mensaje.Replace("'", "\\'").Replace("\n", "\\n");
-            ClientScript.RegisterStartupScript(this.GetType(),
-                "alert",
-                $"alert('{safeMessage}');",
-                true);
-        }
     }
 }

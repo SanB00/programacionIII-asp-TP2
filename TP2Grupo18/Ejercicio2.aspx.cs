@@ -12,7 +12,6 @@ namespace TP2Grupo18
             String strNombre = Common.eliminarEspaciosDelTexto(txtNombre.Text);
             String strApellido = Common.eliminarEspaciosDelTexto(txtApellido.Text);
 
-
             string msgDeErrores = String.Empty;
             if (!Common.esSoloLetras(strNombre)) { msgDeErrores += "\n * El nombre debe tener solo letras, por favor revisar"; }
             if (!Common.esSoloLetras(strApellido)) { msgDeErrores += "\n * El apellido debe tener solo letras, por favor revisar"; }
@@ -22,8 +21,9 @@ namespace TP2Grupo18
                 Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
+
             else {
-                Response.Redirect("Ejercicio2Form2.aspx");
+                Server.Transfer("Ejercicio2Form2.aspx");
             }
         }
 

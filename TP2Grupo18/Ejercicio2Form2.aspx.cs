@@ -11,6 +11,14 @@ namespace TP2Grupo18
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string nombre;
+            string apellido;
+
+            nombre = Request["txtNombre"].ToString();
+            apellido = Request["txtApellido"].ToString();
+
+            lblNombre.Text = "Nombre: " + nombre;
+            lblApellido.Text = "Apellido: " + apellido;
 
         }
     }

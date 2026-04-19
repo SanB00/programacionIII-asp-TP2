@@ -21,7 +21,13 @@
         <p>
             <asp:Label ID="lblZona" runat="server" Text="Zona:"></asp:Label>
         </p>
-        <asp:Label ID="lblTemasElegidos" runat="server" Text="Los temas elegidos son:"></asp:Label>
+        <asp:Label ID="lblTemasElegidos" runat="server"></asp:Label>
+        <p> 
+           <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="lblFechaHora" runat="server"></asp:Label>
+        </p>
     </form>
 </body>
 </html>

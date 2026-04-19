@@ -102,7 +102,7 @@
                             <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style4">|</td>
+                    <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>

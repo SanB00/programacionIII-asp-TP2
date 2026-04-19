@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace TP2Grupo18
 {
@@ -8,11 +10,17 @@ namespace TP2Grupo18
 
         }
 
-        protected void btnVerResumen_Click(object sender, EventArgs e) {
+        protected void btnVerResumen_Click(object sender, EventArgs e) 
+        {
             String strNombre = Common.eliminarEspaciosDelTexto(txtNombre.Text);
             String strApellido = Common.eliminarEspaciosDelTexto(txtApellido.Text);
 
+
             string msgDeErrores = String.Empty;
+            if (strNombre.Length < 2)
+            {
+                msgDeErrores += "\n * El nombre es demasiado corto.";
+            }   
             if (!Common.esSoloLetras(strNombre)) { msgDeErrores += "\n * El nombre debe tener solo letras, por favor revisar"; }
             if (!Common.esSoloLetras(strApellido)) { msgDeErrores += "\n * El apellido debe tener solo letras, por favor revisar"; }
             if (string.IsNullOrEmpty(strNombre)) { msgDeErrores += "\n * El nombre no debe tener espacios o quedar en blanco. Por favor completar"; }
@@ -21,9 +29,35 @@ namespace TP2Grupo18
                 Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
+            { 
+               Session["Ciudad"] = ddlCiudades.SelectedItem.Text;
 
-            else {
-                Server.Transfer("Ejercicio2Form2.aspx");
+                // Temas
+                List<string> listaTemas = new List<string>();
+
+                foreach (ListItem item in chkTemas.Items)
+                {
+                    if (item.Selected)
+                    {
+                        listaTemas.Add(item.Text);
+                    }
+                }
+
+                string temas = string.Join(", ", listaTemas);
+
+                if (string.IsNullOrEmpty(temas))
+                {
+                    temas = "Ninguno";
+                }
+
+                Session["Nombre"] = strNombre;
+                Session["Apellido"] = strApellido;
+                Session["Temas"] = temas;
+                Session["Zona"] = ddlCiudades.SelectedValue; 
+;
+
+
+                Server.Transfer ("Ejercicio2Form2.aspx");
             }
         }
 

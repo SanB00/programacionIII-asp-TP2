@@ -27,6 +27,17 @@
             height: 23px;
             width: 141px;
         }
+        .auto-style7 {
+            width: 138px;
+            height: 26px;
+        }
+        .auto-style8 {
+            width: 141px;
+            height: 26px;
+        }
+        .auto-style9 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -43,15 +54,15 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Nombre:</td>
-                    <td class="auto-style5">
+                    <td class="auto-style7">Nombre:</td>
+                    <td class="auto-style8">
                         <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style9"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
@@ -91,7 +102,7 @@
                             <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">|</td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>

@@ -13,11 +13,12 @@ namespace TP2Grupo18
             string nombre = Request["txtNombre"].ToString();
             string apellido = Request["txtApellido"].ToString();
             string zona = Session["Zona"] != null ? Session["Zona"].ToString() : "Sin zona";
-            string temas = Session["Temas"] != null ? Session["Temas"].ToString() : "Sin Temas";
+            string ciudad = Session["Ciudad"] != null ? Session["Ciudad"].ToString() : "Sin ciudad";
+            string temas = Session["Temas"] != null ? Session["Temas"].ToString() : "Sin temas seleccionados";
 
             lblNombre.Text = "Nombre: " + nombre;
             lblApellido.Text = "Apellido: " + apellido;
-            lblZona.Text = "Zona: " + zona;
+            lblZona.Text = $"Zona: {zona} ({ciudad})";
             lblTemasElegidos.Text = "Temas: " + temas;
 
             lblFechaHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");

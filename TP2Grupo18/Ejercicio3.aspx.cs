@@ -38,7 +38,7 @@ namespace TP2Grupo18
             switch (index) {
                 case 0:
                     lblTexto.ForeColor = System.Drawing.Color.Green;
-                    lblTexto.Text = "Testo Coloreado a color Verde";
+                    lblTexto.Text = "Texto coloreado a color Verde";
                     break;
                 case 1:
                     lblTexto.ForeColor = System.Drawing.Color.Blue;
@@ -46,11 +46,11 @@ namespace TP2Grupo18
                     break;
                 case 2:
                     lblTexto.ForeColor = System.Drawing.Color.Yellow;
-                    lblTexto.Text = "Texto Coloreado a Color Amarillo";
+                    lblTexto.Text = "Texto coloreado a color Amarillo";
                     break;
                 case 3:
                     lblTexto.ForeColor = System.Drawing.Color.Red;
-                    lblTexto.Text = "Texto Coloreado a Color Rojo";
+                    lblTexto.Text = "Texto coloreado a color Rojo";
                     break;
             }
         }

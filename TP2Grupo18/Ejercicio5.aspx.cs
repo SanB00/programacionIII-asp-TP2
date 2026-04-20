@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TP2Grupo18
 {
@@ -31,9 +26,9 @@ namespace TP2Grupo18
             String memoriaSeleccionada = ddlCantMemoria.SelectedItem.Text;
             int precioMemoria = int.Parse(ddlCantMemoria.SelectedValue);
 
-            int precioAccesorios = 0;
-            int precioFinal = precioMemoria + precioAccesorios;
-            lblResultado.Text = $"El precio de la memoria RAM de {memoriaSeleccionada} es ${precioMemoria}. El precio Total es {precioFinal}";
+            float precioAccesorios = 0.0f;
+            float precioFinal = precioMemoria + precioAccesorios;
+            lblResultado.Text = $"El precio de la memoria RAM de {memoriaSeleccionada} es ${precioMemoria}. El precio Total es {precioFinal:F2}";
 
         }
     }

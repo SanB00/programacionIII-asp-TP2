@@ -96,7 +96,7 @@
                 <tr>
                     <td class="auto-style3">Ciudad:</td>
                     <td class="auto-style6">
-                        <asp:DropDownList ID="ddlCiudades" runat="server" AutoPostBack="True" Width="130px">
+                        <asp:DropDownList ID="ddlCiudades" runat="server" Width="130px">
                             <asp:ListItem Value="Zona Norte">Gral. Pacheco</asp:ListItem>
                             <asp:ListItem Value="Zona Oeste">San Miguel</asp:ListItem>
                             <asp:ListItem Value="Zona Sur">Boedo</asp:ListItem>

@@ -11,6 +11,7 @@ namespace TP2Grupo18
         }
 
         protected void btnVerResumen_Click(object sender, EventArgs e) {
+            #region 1) Validación de inputs
             String strNombre = Common.eliminarEspaciosDelTexto(txtNombre.Text);
             String strApellido = Common.eliminarEspaciosDelTexto(txtApellido.Text);
             string msgDeErrores = String.Empty;
@@ -23,7 +24,9 @@ namespace TP2Grupo18
                 Common.mostrarMensajeEnAlerta(msgDeErrores, this);
                 return;
             }
-            #region Obtención de temas seleccionados
+            #endregion
+
+            #region 2) Obtención de temas seleccionados
             List<string> listaTemas = new List<string>();
             foreach (ListItem item in chkTemas.Items) {
                 if (item.Selected) {
@@ -36,12 +39,14 @@ namespace TP2Grupo18
             }
             #endregion
 
+            #region 3) Almacenamiento en sesión y reenvío a otro formulario
             Session["Nombre"] = strNombre;
             Session["Apellido"] = strApellido;
             Session["Temas"] = temasSeleccionados;
             Session["Zona"] = ddlCiudades.SelectedValue;
             Session["Ciudad"] = ddlCiudades.SelectedItem.Text;
             Server.Transfer("Ejercicio2Form2.aspx");
+            #endregion
         }
     }
 }

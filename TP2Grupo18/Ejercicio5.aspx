@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 484px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -12,19 +17,19 @@
             <table style="width: 100%;">
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style1">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style1">
                         <h2>Elija su configuración</h2>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style1">
 
                         <asp:Label ID="label1" runat="server" Text="Seleccione cantidad de memoria"></asp:Label>
                     </td>
@@ -32,7 +37,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:DropDownList ID="ddlCantMemoria" runat="server">
                         </asp:DropDownList>
                     </td>
@@ -40,34 +45,40 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style1">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style1">
+                        <asp:Label ID="lblSeleccion" runat="server" Text="Seleccione un Accesorio"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style1">
+                        <asp:CheckBoxList ID="chkAccesorios" runat="server">
+                        </asp:CheckBoxList>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style1">
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style1">
                         <asp:Button ID="btnCalcularPrecio" runat="server" OnClick="btnCalcularPrecio_Click" Text="Calcular precio" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:Label ID="lblResultado" runat="server"></asp:Label>
                     </td>
                     <td>&nbsp;</td>

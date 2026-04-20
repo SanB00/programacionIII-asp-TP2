@@ -12,13 +12,16 @@ namespace TP2Grupo18
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+        private void incrementarContadorColor(string color) {
+            int cantColor = (ViewState[color] != null) ? (int)ViewState[color] + 1 : 0;
+            ViewState[color] = cantColor;
 
+        }
         protected void lbtnVerde_Click(object sender, EventArgs e) {
-            lblTexto.ForeColor = System.Drawing.Color.Green;
-            int contVerde = (ViewState["ContVerde"] != null) ? (int)ViewState["ContVerde"] : 0;
-            contVerde++;
-            ViewState["ContVerde"] = contVerde;
-            lblContVerde.Text = "Verdes: " + contVerde;
+            System.Drawing.Color color = System.Drawing.Color.Green;
+            lblTexto.ForeColor = color;
+            incrementarContadorColor(color.ToString());
+            lblContVerde.Text = "Verdes: " + ViewState[color.ToString()];
         }
         protected void lbtnAzul_Click(object sender, EventArgs e) {
             lblTexto.ForeColor = System.Drawing.Color.Blue;
@@ -31,14 +34,15 @@ namespace TP2Grupo18
             lblTexto.ForeColor = System.Drawing.Color.Red;
         }
 
-        static Random rnd = new Random();
         protected void lbtnRandom_Click(object sender, EventArgs e) {
+            Random rnd = new Random();
             int index = rnd.Next(3);
 
             switch (index) {
                 case 0:
                     lblTexto.ForeColor = System.Drawing.Color.Green;
                     lblTexto.Text = "Texto coloreado a color Verde";
+                    lbtnVerde_Click(this, e);
                     break;
                 case 1:
                     lblTexto.ForeColor = System.Drawing.Color.Blue;

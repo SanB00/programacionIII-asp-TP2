@@ -11,7 +11,7 @@ namespace TP2Grupo18
 {
 
 
-    public partial class Ejercicio2
+    public partial class Ejercicio5
     {
 
         /// <summary>
@@ -24,48 +24,39 @@ namespace TP2Grupo18
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtNombre control.
+        /// label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.Label label1;
 
         /// <summary>
-        /// txtApellido control.
+        /// ddlCantMemoria control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApellido;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCantMemoria;
 
         /// <summary>
-        /// ddlCiudades control.
+        /// btnCalcularPrecio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCiudades;
+        protected global::System.Web.UI.WebControls.Button btnCalcularPrecio;
 
         /// <summary>
-        /// chkTemas control.
+        /// lblResultado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkTemas;
-
-        /// <summary>
-        /// btnVerResumen control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVerResumen;
+        protected global::System.Web.UI.WebControls.Label lblResultado;
     }
 }

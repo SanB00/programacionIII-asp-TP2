@@ -74,6 +74,11 @@
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style3">
+                        <asp:RadioButtonList ID="rblProcesador" runat="server">
+                            <asp:ListItem Value="2000">i3</asp:ListItem>
+                            <asp:ListItem Value="3500">i5</asp:ListItem>
+                            <asp:ListItem Value="5000">i5</asp:ListItem>
+                        </asp:RadioButtonList>
                         </td>
                     <td class="auto-style2"></td>
                 </tr>

@@ -30,6 +30,8 @@ namespace TP2Grupo18
         protected void btnCalcularPrecio_Click(object sender, EventArgs e) {
             String memoriaSeleccionada = ddlCantMemoria.SelectedItem.Text;
             int precioMemoria = int.Parse(ddlCantMemoria.SelectedValue);
+            string nombreProcesador = rblProcesador.SelectedItem.Text;
+            int precioProcesador = int.Parse(rblProcesador.SelectedValue);
 
             if (chbDualChannel.Checked)
             {
@@ -38,8 +40,10 @@ namespace TP2Grupo18
             }
 
             float precioAccesorios = 0.0f;
-            float precioFinal = precioMemoria + precioAccesorios;
-            lblResultado.Text = $"El precio de la memoria RAM de {memoriaSeleccionada} es ${precioMemoria}. El precio Total es {precioFinal:F2}";
+            float precioFinal = precioMemoria + precioAccesorios + precioProcesador;
+            lblResultado.Text = $"Memoria RAM {memoriaSeleccionada}: ${precioMemoria:F2}. <br />" +
+                      $"Procesador {nombreProcesador}: ${precioProcesador:F2}. <br />" +
+                      $"<strong>El precio Total es: ${precioFinal:F2}</strong>";
 
         }
     }

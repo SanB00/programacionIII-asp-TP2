@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio1.aspx.cs" Inherits="TP2Grupo18.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio1.aspx.cs" Inherits="TP2Grupo18.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -106,7 +106,9 @@
                         <asp:Button ID="btnGenerarTabla" runat="server" style="font-weight: 700" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" Font-Bold="False" ToolTip="Mostrar tabla con datos del producto :)" />
                     </td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnLimpiar" runat="server" OnClick="btnLimpiar_Click" Text="Limpiar" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

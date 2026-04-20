@@ -51,12 +51,15 @@ namespace TP2Grupo18
             #endregion
 
             #region 4) Limpiar campos después de cargar la tabla
+            this.btnLimpiar_Click(this, e);
+            #endregion
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e) {
             txtCantidad1.Text = string.Empty;
             txtCantidad2.Text = string.Empty;
             txtProducto1.Text = string.Empty;
             txtProducto2.Text = string.Empty;
-            #endregion
         }
-
     }
 }

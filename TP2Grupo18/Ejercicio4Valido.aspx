@@ -15,7 +15,6 @@
 <body>
     <form id="form1" runat="server">
         <table class="auto-style1">
-            <tr></tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
@@ -25,6 +24,7 @@
         </table>
         <div>
         </div>
+        <asp:LinkButton ID="linkbtnCerrarSesion" runat="server" OnClick="linkbtnCerrarSesion_Click">Cerrar Sesion</asp:LinkButton>
     </form>
 </body>
 </html>

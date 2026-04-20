@@ -11,6 +11,7 @@
         <div>
             <asp:Label ID="lblMensajeUsuario" runat="server" Text="Usuario inválido - Ingreso no permitido"></asp:Label>
         </div>
+        <asp:LinkButton ID="linkbtnVolver" runat="server" OnClick="linkbtnVolver_Click">Volver</asp:LinkButton>
     </form>
 </body>
 </html>

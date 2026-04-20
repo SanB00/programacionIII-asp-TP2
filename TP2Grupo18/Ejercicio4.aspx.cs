@@ -18,9 +18,11 @@ namespace TP2Grupo18
             string clave = txtClave.Text.Trim();
 
             if (usuario == "claudio" && clave == "casas") {
-                Response.Redirect("WebForm2.aspx?usuario=" + usuario);
+                //Response.Redirect("WebForm2.aspx?usuario=" + usuario);
+                Server.Transfer("Ejercicio4Valido.aspx");
             }
             else {
+                Server.Transfer("Ejercicio4Error.aspx");
             }
         }
     }

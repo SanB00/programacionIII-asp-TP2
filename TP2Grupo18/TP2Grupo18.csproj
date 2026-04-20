@@ -70,6 +70,8 @@
     <Content Include="Ejercicio2.aspx" />
     <Content Include="Ejercicio3.aspx" />
     <Content Include="Ejercicio4.aspx" />
+    <Content Include="Ejercicio4Error.aspx" />
+    <Content Include="Ejercicio4Valido.aspx" />
     <Content Include="Web.config" />
     <Content Include="Ejercicio1.aspx" />
     <Content Include="Ejercicio2Form2.aspx" />
@@ -96,6 +98,20 @@
     </Compile>
     <Compile Include="Ejercicio4.aspx.designer.cs">
       <DependentUpon>Ejercicio4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4Error.aspx.cs">
+      <DependentUpon>Ejercicio4Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4Error.aspx.designer.cs">
+      <DependentUpon>Ejercicio4Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio4Valido.aspx.cs">
+      <DependentUpon>Ejercicio4Valido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejercicio4Valido.aspx.designer.cs">
+      <DependentUpon>Ejercicio4Valido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ejercicio1.aspx.cs">

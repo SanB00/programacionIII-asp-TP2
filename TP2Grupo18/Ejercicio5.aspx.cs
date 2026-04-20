@@ -31,6 +31,12 @@ namespace TP2Grupo18
             String memoriaSeleccionada = ddlCantMemoria.SelectedItem.Text;
             int precioMemoria = int.Parse(ddlCantMemoria.SelectedValue);
 
+            if (chbDualChannel.Checked)
+            {
+                precioMemoria = precioMemoria * 2;
+                memoriaSeleccionada = memoriaSeleccionada + " (x2 Dual Channel)";
+            }
+
             float precioAccesorios = 0.0f;
             float precioFinal = precioMemoria + precioAccesorios;
             lblResultado.Text = $"El precio de la memoria RAM de {memoriaSeleccionada} es ${precioMemoria}. El precio Total es {precioFinal:F2}";

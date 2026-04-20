@@ -42,6 +42,15 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.DropDownList ddlCantMemoria;
 
         /// <summary>
+        /// Control chbDualChannel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbDualChannel;
+
+        /// <summary>
         /// Control lblSeleccion.
         /// </summary>
         /// <remarks>

@@ -9,6 +9,13 @@
         .auto-style1 {
             width: 484px;
         }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 484px;
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +52,8 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style1">¿Desea comprar 2 memorias para usar dual channel?<asp:CheckBox ID="chbDualChannel" runat="server" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -64,10 +72,10 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style1">
-                        &nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style3">
+                        </td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

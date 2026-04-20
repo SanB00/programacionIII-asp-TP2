@@ -32,7 +32,8 @@ namespace TP2Grupo18
             int precioMemoria = int.Parse(ddlCantMemoria.SelectedValue);
             string nombreProcesador = rblProcesador.SelectedItem.Text;
             int precioProcesador = int.Parse(rblProcesador.SelectedValue);
-
+            string nombreDisco = rblAlmacenamiento.SelectedItem.Text;
+            int precioDisco = int.Parse(rblAlmacenamiento.SelectedValue);
             if (chbDualChannel.Checked)
             {
                 precioMemoria = precioMemoria * 2;
@@ -40,9 +41,19 @@ namespace TP2Grupo18
             }
 
             float precioAccesorios = 0.0f;
-            float precioFinal = precioMemoria + precioAccesorios + precioProcesador;
+            string listaAccesorios = "";
+
+            foreach (ListItem item in chkAccesorios.Items)
+            {
+                if (item.Selected)
+                {
+                    precioAccesorios += float.Parse(item.Value, System.Globalization.CultureInfo.InvariantCulture);
+                }
+            }
+            float precioFinal = precioMemoria + precioAccesorios + precioProcesador + precioAccesorios;
             lblResultado.Text = $"Memoria RAM {memoriaSeleccionada}: ${precioMemoria:F2}. <br />" +
                       $"Procesador {nombreProcesador}: ${precioProcesador:F2}. <br />" +
+                      $"Accesorios: {precioAccesorios:f2}. <br />" +
                       $"<strong>El precio Total es: ${precioFinal:F2}</strong>";
 
         }

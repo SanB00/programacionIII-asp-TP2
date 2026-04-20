@@ -7,13 +7,13 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 484px;
+            width: 378px;
         }
         .auto-style2 {
             height: 23px;
         }
         .auto-style3 {
-            width: 484px;
+            width: 378px;
             height: 23px;
         }
     </style>
@@ -72,15 +72,38 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style1">
+                        Seleccione Procesador:</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style3">
-                        <asp:RadioButtonList ID="rblProcesador" runat="server">
+                        <asp:RadioButtonList ID="rblProcesador" runat="server" Height="16px" Width="51px">
                             <asp:ListItem Value="2000">i3</asp:ListItem>
                             <asp:ListItem Value="3500">i5</asp:ListItem>
-                            <asp:ListItem Value="5000">i5</asp:ListItem>
+                            <asp:ListItem Value="5000">i7</asp:ListItem>
                         </asp:RadioButtonList>
                         </td>
                     <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style3">
+                        Seleccione Almacenamiento:</td>
+                    <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:RadioButtonList ID="rblAlmacenamiento" runat="server">
+                            <asp:ListItem Value="600">HDD 1TB</asp:ListItem>
+                            <asp:ListItem Value="850">SSD 500GB</asp:ListItem>
+                            <asp:ListItem Value="1200">SSD 1TB</asp:ListItem>
+                        </asp:RadioButtonList>
+                        </td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

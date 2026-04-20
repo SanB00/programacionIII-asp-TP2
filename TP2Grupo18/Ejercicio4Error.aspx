@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="lblMensajeUsuario" runat="server" Text="Usuario inválido - Ingreso no permitido"></asp:Label>
         </div>
     </form>
 </body>

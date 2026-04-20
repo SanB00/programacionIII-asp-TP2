@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Web.UI.WebControls;
 
 namespace TP2Grupo18
 {
@@ -7,6 +9,9 @@ namespace TP2Grupo18
         protected void Page_Load(object sender, EventArgs e) {
             if (!IsPostBack) {
                 cargarDdlCantMemoria(); // Solo se ejecuta la primera vez
+                chkAccesorios.Items.Add(new ListItem("Monitor LCD", "2000.50"));
+                chkAccesorios.Items.Add(new ListItem("HD 500GB", "550.50"));
+                chkAccesorios.Items.Add(new ListItem("Grabador DVD", "1200"));
             }
         }
 

@@ -18,13 +18,21 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Label ID="lblBienvenida" runat="server"></asp:Label>
+                    <h2>
+                        <asp:Label ID="lblBienvenida" runat="server"></asp:Label>
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:LinkButton ID="linkbtnCerrarSesion" runat="server" OnClick="linkbtnCerrarSesion_Click">Cerrar Sesión</asp:LinkButton>
                 </td>
             </tr>
         </table>
-        <div>
-        </div>
-        <asp:LinkButton ID="linkbtnCerrarSesion" runat="server" OnClick="linkbtnCerrarSesion_Click">Cerrar Sesion</asp:LinkButton>
     </form>
 </body>
 </html>

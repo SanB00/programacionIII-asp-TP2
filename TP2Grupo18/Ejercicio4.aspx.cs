@@ -8,7 +8,7 @@ namespace TP2Grupo18
         protected void btnValidar_Click(object sender, EventArgs e) {
             // Al ser "usuario/clave" no es necesario modificar eliminando los espacios
             string usuario = Common.eliminarEspaciosDelTexto(txtUsuario.Text);
-            string clave = txtClave.Text.Trim();
+            string clave = txtClave.Text;
 
             if (usuario.ToLower() == "claudio" && clave == "casas") {
                 Response.Redirect("Ejercicio4Valido.aspx?usuario=" + usuario); //Server.Transfer("Ejercicio4Valido.aspx");

@@ -20,9 +20,8 @@ namespace TP2Grupo18
             return Request.QueryString["usuario"].ToString();
         }
 
-        protected void linkbtnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Ejercicio4.aspx");
+        protected void linkbtnCerrarSesion_Click(object sender, EventArgs e) {
+            Response.Redirect("Ejercicio4.aspx");
         }
     }
 }

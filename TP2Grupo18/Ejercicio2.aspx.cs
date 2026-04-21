@@ -48,5 +48,9 @@ namespace TP2Grupo18
             Server.Transfer("Ejercicio2Form2.aspx");
             #endregion
         }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuPrincipal.aspx");
+        }
     }
 }

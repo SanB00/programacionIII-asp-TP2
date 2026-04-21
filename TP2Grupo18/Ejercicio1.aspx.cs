@@ -61,5 +61,9 @@ namespace TP2Grupo18
             txtProducto1.Text = string.Empty;
             txtProducto2.Text = string.Empty;
         }
+    protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuPrincipal.aspx");
+        }
     }
-}
+    }

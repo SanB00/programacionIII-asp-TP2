@@ -11,11 +11,14 @@ namespace TP2Grupo18
             string clave = txtClave.Text;
 
             if (usuario.ToLower() == "claudio" && clave == "casas") {
-                Response.Redirect("Ejercicio4Valido.aspx?usuario=" + usuario); //Server.Transfer("Ejercicio4Valido.aspx");
+                Response.Redirect("Ejercicio4Valido.aspx?usuario=" + usuario);
             }
             else {
                 Server.Transfer("Ejercicio4Error.aspx");
             }
+        }
+        protected void btnVolver_Click(object sender, EventArgs e) {
+            Response.Redirect("MenuPrincipal.aspx");
         }
     }
 }

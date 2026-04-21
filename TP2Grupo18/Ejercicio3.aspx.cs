@@ -44,7 +44,7 @@ namespace TP2Grupo18
             lblTexto.ForeColor = color;
             int newQuantity = incrementarContadorColor(color.ToString());
             LinkButton btn = sender as LinkButton;
-            btn.Text = $"({newQuantity}) {nombreColor}";//: {ViewState[color]}
+            btn.Text = $"({newQuantity}) {nombreColor}";
         }
 
         protected void lbtnRandom_Click(object sender, EventArgs e) {
@@ -76,6 +76,10 @@ namespace TP2Grupo18
                 lblTexto.Text = "¡Error! Por favor, ingresá un texto.";
                 lblTexto.ForeColor = System.Drawing.Color.Red;
             }
+        }
+
+        protected void btnVolver_Click(object sender, EventArgs e) {
+            Response.Redirect("MenuPrincipal.aspx");
         }
     }
 }

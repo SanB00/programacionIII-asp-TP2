@@ -62,5 +62,10 @@ namespace TP2Grupo18
                       $"<strong>El precio Total es: ${precioFinal:F2}</strong>";
 
         }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuPrincipal.aspx");
+        }
+
     }
 }

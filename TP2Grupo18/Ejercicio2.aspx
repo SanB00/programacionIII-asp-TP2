@@ -234,6 +234,13 @@
                     <td>&nbsp;</td>
                 </tr>
             </table>
+            <br /><br />
+
+<div class="contenedor-boton">
+    <asp:Button ID="btnVolver" runat="server" 
+        Text="← Volver al menú" 
+        CssClass="boton-volver"
+        OnClick="btnVolver_Click" />
         </div>
     </form>
 </body>

@@ -10,8 +10,8 @@ namespace TP2Grupo18
     public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e) {
-            string nombre = Request["txtNombre"].ToString();
-            string apellido = Request["txtApellido"].ToString();
+            string nombre = Request["txtNombre"] != null ? Request["txtNombre"].ToString() : "Sin nombre";
+            string apellido = Request["txtApellido"] != null ? Request["txtApellido"].ToString() : "Sin apellido";
             string zona = Session["Zona"] != null ? Session["Zona"].ToString() : "Sin zona";
             string ciudad = Session["Ciudad"] != null ? Session["Ciudad"].ToString() : "Sin ciudad";
             string temas = Session["Temas"] != null ? Session["Temas"].ToString() : "Sin temas seleccionados";
@@ -33,6 +33,10 @@ namespace TP2Grupo18
             }
 
 
+        }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2.aspx");
         }
     }
 }

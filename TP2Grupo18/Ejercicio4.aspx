@@ -71,6 +71,14 @@
                 </td>
             </tr>
         </table>
+        <br /><br />
+
+<div style="text-align:center; margin-top:20px;">
+    <asp:Button ID="btnVolver" runat="server" 
+        Text="← Volver al menú" 
+        OnClick="btnVolver_Click"
+        Style="padding:10px 20px; background-color:#4CAF50; color:white; border:none; border-radius:5px;" />
+</div>
     </form>
 </body>
 </html>

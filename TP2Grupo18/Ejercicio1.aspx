@@ -126,7 +126,16 @@
             </table>
         </div>
         <asp:GridView ID="gvListadoProductos" runat="server" BorderStyle="Double" BorderWidth="5px" CellPadding="5" CellSpacing="1">
-        </asp:GridView>
+</asp:GridView>
+
+<br /><br />
+
+<div class="contenedor-boton">
+    <asp:Button ID="btnVolver" runat="server" 
+        Text="← Volver al menú" 
+        CssClass="boton-volver"
+        OnClick="btnVolver_Click" />
+</div>
     </form>
 </body>
 </html>

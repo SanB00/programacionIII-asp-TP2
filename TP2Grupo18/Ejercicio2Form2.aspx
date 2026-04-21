@@ -28,6 +28,17 @@
         <p>
             <asp:Label ID="lblFechaHora" runat="server"></asp:Label>
         </p>
+        <p>
+        <asp:Label ID="Label1" runat="server"></asp:Label>
+</p>
+
+<br />
+
+<div style="text-align:center; margin-top:20px;">
+    <asp:Button ID="btnVolver" runat="server" 
+        Text="← Volver al menú" 
+        OnClick="btnVolver_Click" />
+</div>
     </form>
 </body>
 </html>

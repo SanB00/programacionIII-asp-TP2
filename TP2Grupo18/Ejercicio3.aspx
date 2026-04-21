@@ -13,14 +13,14 @@
         .auto-style2 {
             width: 130px;
         }
-        .auto-style3 {
-            width: 139px;
-        }
         .auto-style4 {
             width: 111px;
         }
         .auto-style5 {
             width: 191px;
+        }
+        .auto-style6 {
+            width: 150px;
         }
     </style>
 </head>
@@ -29,40 +29,39 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">Contador</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:LinkButton ID="lbtnVerde" runat="server" OnClick="lbtnVerde_Click">Verde</asp:LinkButton>
                 </td>
                 <td class="auto-style4">
-                    <asp:Label ID="lblContVerde" runat="server" Text="Label"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:LinkButton ID="lbtnAzul" runat="server" OnClick="lbtnAzul_Click">Azul</asp:LinkButton>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:LinkButton ID="lbtnAmarillo" runat="server" OnClick="lbtnAmarillo_Click">Amarillo</asp:LinkButton>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
@@ -73,7 +72,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:LinkButton ID="lbtnRojo" runat="server" OnClick="lbtnRojo_Click">Rojo</asp:LinkButton>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
@@ -84,7 +83,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:LinkButton ID="lbtnRandom" runat="server" OnClick="lbtnRandom_Click">Random</asp:LinkButton>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
@@ -96,7 +95,7 @@
             <tr><td class="auto-style2">&nbsp;</td></tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:Label ID="lblTexto" runat="server" Font-Bold="True" Text="Texto Coloreado"></asp:Label>
                 </td>
                 <td class="auto-style4">

@@ -29,8 +29,7 @@ namespace TP2Grupo18
 
         protected void btnCalcularPrecio_Click(object sender, EventArgs e) {
 
-            if (rblProcesador.SelectedIndex == -1 || rblAlmacenamiento.SelectedIndex == -1)
-            {
+            if (rblProcesador.SelectedIndex == -1 || rblAlmacenamiento.SelectedIndex == -1) {
                 lblResultado.Text = "<span style='color:red;'>Por favor seleccioná un procesador y un almacenamiento.</span>";
                 return;
             }
@@ -39,30 +38,27 @@ namespace TP2Grupo18
             int precioMemoria = int.Parse(ddlCantMemoria.SelectedValue);
             string nombreProcesador = rblProcesador.SelectedItem.Text;
             int precioProcesador = int.Parse(rblProcesador.SelectedValue);
-            string nombreDisco = rblAlmacenamiento.SelectedItem.Text;
-            int precioDisco = int.Parse(rblAlmacenamiento.SelectedValue);
-            
-            if (chbDualChannel.Checked)
-            {
+            string nombreAlmacenamiento = rblAlmacenamiento.SelectedItem.Text;
+            int precioAlmacenamiento = int.Parse(rblAlmacenamiento.SelectedValue);
+
+            if (chbDualChannel.Checked) {
                 precioMemoria = precioMemoria * 2;
                 memoriaSeleccionada = memoriaSeleccionada + " (x2 Dual Channel)";
             }
 
             float precioAccesorios = 0.0f;
 
-            foreach (ListItem item in chkAccesorios.Items)
-            {
-                if (item.Selected)
-                {
+            foreach (ListItem item in chkAccesorios.Items) {
+                if (item.Selected) {
                     precioAccesorios += float.Parse(item.Value, System.Globalization.CultureInfo.InvariantCulture);
                 }
             }
 
-            float precioFinal = precioMemoria + precioAccesorios + precioDisco + precioProcesador;
-            lblResultado.Text = $"Memoria RAM {memoriaSeleccionada}: ${precioMemoria:F2}. <br />" + 
+            float precioFinal = precioMemoria + precioAccesorios + precioAlmacenamiento + precioProcesador;
+            lblResultado.Text = $"Memoria RAM {memoriaSeleccionada}: ${precioMemoria:F2}. <br />" +
                       $"Procesador {nombreProcesador}: ${precioProcesador:F2}. <br />" +
-                      $"Accesorios: ${precioAccesorios}. <br />" +
-                      $"Disco {nombreDisco}: ${precioDisco:F2}. <br />" +
+                      $"Accesorios: ${precioAccesorios:F2}. <br />" +
+                      $"Almacenamiento {nombreAlmacenamiento}: ${precioAlmacenamiento:F2}. <br />" +
                       $"<strong>El precio Total es: ${precioFinal:F2}</strong>";
 
         }

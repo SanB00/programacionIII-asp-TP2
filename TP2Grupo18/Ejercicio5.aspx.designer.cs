@@ -42,52 +42,52 @@ namespace TP2Grupo18
         protected global::System.Web.UI.WebControls.DropDownList ddlCantMemoria;
 
         /// <summary>
-        /// Control chbDualChannel.
+        /// chbDualChannel control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chbDualChannel;
 
         /// <summary>
-        /// Control lblSeleccion.
+        /// lblSeleccion control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSeleccion;
 
         /// <summary>
-        /// Control chkAccesorios.
+        /// chkAccesorios control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList chkAccesorios;
 
         /// <summary>
-        /// Control rblProcesador.
+        /// rblProcesador control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rblProcesador;
 
         /// <summary>
-        /// Control rblAlmacenamiento.
+        /// rblAlmacenamiento control.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rblAlmacenamiento;
 
         /// <summary>
-        /// Control btnCalcularPrecio.
+        /// btnCalcularPrecio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

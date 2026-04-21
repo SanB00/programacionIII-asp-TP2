@@ -12,26 +12,39 @@ namespace TP2Grupo18
         protected void Page_Load(object sender, EventArgs e) {
 
         }
-        private void incrementarContadorColor(string color) {
-            int cantColor = (ViewState[color] != null) ? (int)ViewState[color] + 1 : 0;
-            ViewState[color] = cantColor;
-
-        }
         protected void lbtnVerde_Click(object sender, EventArgs e) {
-            System.Drawing.Color color = System.Drawing.Color.Green;
-            lblTexto.ForeColor = color;
-            incrementarContadorColor(color.ToString());
-            lblContVerde.Text = "Verdes: " + ViewState[color.ToString()];
+            string nombreColor = "Verde";
+            actualizarTextoLinkButton(sender, System.Drawing.Color.Green, nombreColor);
+            lblTexto.Text = $"Texto coloreado a color {nombreColor}";
         }
         protected void lbtnAzul_Click(object sender, EventArgs e) {
-            lblTexto.ForeColor = System.Drawing.Color.Blue;
+            string nombreColor = "Azul";
+            actualizarTextoLinkButton(sender, System.Drawing.Color.Blue, nombreColor);
+            lblTexto.Text = $"Texto coloreado a color {nombreColor}";
         }
 
         protected void lbtnAmarillo_Click(object sender, EventArgs e) {
-            lblTexto.ForeColor = System.Drawing.Color.Yellow;
+            string nombreColor = "Amarillo";
+            actualizarTextoLinkButton(sender, System.Drawing.Color.Yellow, nombreColor);
+            lblTexto.Text = $"Texto coloreado a color {nombreColor}";
         }
         protected void lbtnRojo_Click(object sender, EventArgs e) {
-            lblTexto.ForeColor = System.Drawing.Color.Red;
+            string nombreColor = "Rojo";
+            actualizarTextoLinkButton(sender, System.Drawing.Color.Red, nombreColor);
+            lblTexto.Text = $"Texto coloreado a color {nombreColor}";
+        }
+
+        private int incrementarContadorColor(string color) {
+            int cantColor = (ViewState[color] != null) ? (int)ViewState[color] + 1 : 1;
+            ViewState[color] = cantColor;
+            return cantColor;
+        }
+
+        private void actualizarTextoLinkButton(object sender, System.Drawing.Color color, string nombreColor) {
+            lblTexto.ForeColor = color;
+            int newQuantity = incrementarContadorColor(color.ToString());
+            LinkButton btn = sender as LinkButton;
+            btn.Text = $"({newQuantity}) {nombreColor}";//: {ViewState[color]}
         }
 
         protected void lbtnRandom_Click(object sender, EventArgs e) {
@@ -40,21 +53,16 @@ namespace TP2Grupo18
 
             switch (index) {
                 case 0:
-                    lblTexto.ForeColor = System.Drawing.Color.Green;
-                    lblTexto.Text = "Texto coloreado a color Verde";
-                    lbtnVerde_Click(this, e);
+                    lbtnVerde_Click(lbtnVerde, e);
                     break;
                 case 1:
-                    lblTexto.ForeColor = System.Drawing.Color.Blue;
-                    lblTexto.Text = "Texto coloreado a color Azul";
+                    lbtnAzul_Click(lbtnAzul, e);
                     break;
                 case 2:
-                    lblTexto.ForeColor = System.Drawing.Color.Yellow;
-                    lblTexto.Text = "Texto coloreado a color Amarillo";
+                    lbtnAmarillo_Click(lbtnAmarillo, e);
                     break;
                 case 3:
-                    lblTexto.ForeColor = System.Drawing.Color.Red;
-                    lblTexto.Text = "Texto coloreado a color Rojo";
+                    lbtnRojo_Click(lbtnRojo, e);
                     break;
             }
         }

@@ -19,5 +19,9 @@ namespace TP2Grupo18
         protected string obtenerUsuarioConQueryParam() {
             return Request.QueryString["usuario"].ToString();
         }
+
+        protected void linkbtnCerrarSesion_Click(object sender, EventArgs e) {
+            Response.Redirect("Ejercicio4.aspx");
+        }
     }
 }

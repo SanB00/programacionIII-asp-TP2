@@ -16,8 +16,8 @@
 
         .contenedor {
             width: 400px;
-            margin: 100px auto;
-            padding: 30px;
+            margin: 25px auto;
+            padding: 25px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0px 0px 10px gray;
@@ -46,24 +46,34 @@
 <body>
     <form id="form1" runat="server">
         <div class="contenedor">
-
             <asp:Label ID="Label2" runat="server" Text="Bienvenido/a!" CssClass="titulo"></asp:Label>
-
             <br />
             <br />
-
             <asp:Label ID="Label1" runat="server"
                 Text="Elija el ejercicio a ejecutar:"
                 CssClass="subtitulo"></asp:Label>
-
             <br />
-
             <asp:Button ID="btnEj1" runat="server" Text="Ejercicio 1" CssClass="boton" OnClick="btnEj1_Click" />
             <asp:Button ID="btnEj2" runat="server" Text="Ejercicio 2" CssClass="boton" OnClick="btnEj2_Click" />
             <asp:Button ID="btnEj3" runat="server" Text="Ejercicio 3" CssClass="boton" OnClick="btnEj3_Click" />
             <asp:Button ID="btnEj4" runat="server" Text="Ejercicio 4" CssClass="boton" OnClick="btnEj4_Click" />
             <asp:Button ID="btnEj5" runat="server" Text="Ejercicio 5" CssClass="boton" OnClick="btnEj5_Click" />
-
+        </div>
+        <div class="contenedor">
+            Integrantes Grupo18:
+            <br />
+            <br />
+            Guillermo Maydana
+            <br />
+            Elian Maspero
+            <br />
+            Derly Yulieth Valencia
+            <br />
+            Lautaro Gimenez
+            <br />
+            Franco Casamento
+            <br />
+            Santiago Burgos
         </div>
     </form>
 </body>
